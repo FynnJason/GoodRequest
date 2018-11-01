@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextProgress">
+        <!--进度条颜色-->
+        <attr name="proColor" format="color" />
+        <!--进度条背景色-->
+        <attr name="bgColor" format="color" />
+        <!--文字颜色-->
+        <attr name="textColor" format="color" />
+        <!--文字大小-->
+        <attr name="textSize" format="dimension" />
+        <!--最大进度值-->
+        <attr name="maxValue" format="integer" />
+        <!--当前进度-->
+        <attr name="value" format="integer" />
+        <!--进度文字-->
+        <attr name="text" format="string" />
+    </declare-styleable>
+</resources>
