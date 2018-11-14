@@ -1,6 +1,7 @@
 package com.fynnjason.app.goodrequest.model;
 
 public class BaseModel {
+
     private int code;
     private String msg;
 
