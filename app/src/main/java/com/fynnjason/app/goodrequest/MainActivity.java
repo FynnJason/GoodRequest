@@ -1,5 +1,6 @@
 package com.fynnjason.app.goodrequest;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,12 +11,13 @@ import com.fynnjason.app.goodrequest.network.NetRequest;
 import com.fynnjason.app.goodrequest.network.OkGoCallback;
 import com.fynnjason.app.goodrequest.utils.GsonUtils;
 import com.fynnjason.app.goodrequest.utils.LogUtils;
-import com.fynnjason.app.goodrequest.weights.TextProgress;
+import com.fynnjason.app.goodrequest.weights.ExperienceProgress;
 
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,11 +52,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        TextProgress progress = findViewById(R.id.pro_vip);
-        progress.setMaxValue(2000);
-        progress.setValue(1300);
-        progress.setText("1300/2000");
+        ExperienceProgress vipPro = findViewById(R.id.vip_progress);
+        vipPro.setMax(2000);
+        vipPro.setProgress(1352);
     }
 
 }
